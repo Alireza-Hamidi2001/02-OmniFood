@@ -1,0 +1,40 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    /* overflow: hidden; مرورگر اسکرول نده */
+    font-family: "open-sans", sans-serif;
+}
+
+.container {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    scroll-snap-align: start;
+    align-items: center;
+    font-size: 5rem;
+    color: white;
+}
+
+.s1 {
+    background: tomato;
+}
+.s2 {
+    background: tomato;
+}
+.s3 {
+    background: tomato;
+}
