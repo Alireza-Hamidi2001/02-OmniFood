@@ -16,7 +16,7 @@ body {
   height: 100%;
   scroll-behavior: smooth;
   overflow: hidden;
-  font-family: "open-sans";
+  font-family: "OpenSans";
 }
 
 .container {
@@ -33,7 +33,7 @@ body {
 }
 
 @font-face {
-  font-family: "open-sans";
+  font-family: "OpenSans";
   src: url("../../src/assets/fonts/open-sans/OpenSans-Regular.woff") format("woff"), url("../../src/assets/fonts/open-sans/OpenSans-Regular.ttf") format("truetype"), url("../../src/assets/fonts/open-sans/OpenSans-Regular.eot") format("embedded-opentype");
   font-style: normal;
 }
@@ -140,7 +140,7 @@ body {
   letter-spacing: 1px;
   margin-bottom: 4.8rem;
   line-height: 1.5;
-  font-family: "open-sans";
+  font-family: "OpenSans";
 }
 .introduction__buttonbox {
   display: flex;
