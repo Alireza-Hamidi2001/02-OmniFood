@@ -56,3 +56,18 @@ window.addEventListener("touchend", (e) => {
         scrollToSection(currentSection - 1);
     }
 });
+
+document.querySelectorAll('a[href^="#"]').forEach((link) => {
+    link.addEventListener("click", function (e) {
+        e.preventDefault(); // نذار مرورگر پیش‌فرض بپره
+
+        const targetId = this.getAttribute("href").substring(1); // مثلا "section__story"
+        const targetIndex = Array.from(sections).findIndex(
+            (sec) => sec.id === targetId,
+        );
+
+        if (targetIndex !== -1) {
+            scrollToSection(targetIndex);
+        }
+    });
+});

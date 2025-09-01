@@ -1,0 +1,33 @@
+@use '../abstracts/variables' as *;
+
+.featured {
+    &__text {
+        width: 75%;
+    }
+
+    &__heading {
+        color: $color-text-light;
+    }
+
+    &__logos {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__paragraph {
+        font-size: 2.2rem;
+        color: $color-text-dark;
+        margin-bottom: 2rem;
+    }
+
+    &__logo {
+        height: 20rem;
+        cursor: pointer;
+        transition: all 0.2s;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+}
