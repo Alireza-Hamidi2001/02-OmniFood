@@ -1,40 +1,33 @@
 *,
-*::after,
-*::before {
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: inherit;
 }
 
 html {
-    box-sizing: border-box;
     font-size: 62.5%;
+    box-sizing: border-box;
 }
 
+html,
 body {
-    font-size: 2rem;
-    font-family: 'open-sans';
     height: 100%;
     scroll-behavior: smooth;
+    overflow: hidden;
+    font-family: 'open-sans';
 }
 
-.cotainer {
+.container {
     height: 100vh;
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
+    overflow: hidden;
 }
 
-section {
+.section {
     height: 100vh;
-    scroll-snap-align: start;
     display: flex;
-    justify-content: center;
     align-items: center;
-    font-size: 3rem;
-    color: white;
+    justify-content: center;
+    transition: transform 0.7s ease;
 }
-
-.s1{background: tomato;}
-.s2{background: goldenrod;}
-.s3{background: greenyellow;}
-

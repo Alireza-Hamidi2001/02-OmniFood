@@ -10,3 +10,9 @@
 @use "./base/utilities";
 
 // COMPONENTS
+@use "./components/section";
+@use "./components/introduction";
+@use "./components/button";
+
+// LAYOUT
+@use "./layouts/header";
