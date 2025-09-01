@@ -1,255 +1,214 @@
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 
 html {
-    font-size: 62.5%;
-    box-sizing: border-box;
+  font-size: 62.5%;
+  box-sizing: border-box;
 }
 
 html,
 body {
-    height: 100%;
-    scroll-behavior: smooth;
-    overflow: hidden;
-    font-family: "OpenSans";
+  height: 100%;
+  scroll-behavior: smooth;
+  overflow: hidden;
+  font-family: "OpenSans";
 }
 
 .container {
-    height: 100vh;
-    overflow: hidden;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .section {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: transform 0.7s ease;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.7s ease;
 }
 
 @font-face {
-    font-family: "OpenSans";
-    src: url("../../fonts/open-sans/OpenSans-Regular.woff") format("woff"),
-        url("../../fonts/open-sans/OpenSans-Regular.ttf") format("truetype"),
-        url("../../fonts/open-sans/OpenSans-Regular.eot")
-            format("embedded-opentype");
-    font-style: normal;
+  font-family: "OpenSans";
+  src: url("./fonts/open-sans/OpenSans-Regular.woff") format("woff"), url("./fonts/open-sans/OpenSans-Regular.ttf") format("truetype"), url("./fonts/open-sans/OpenSans-Regular.eot") format("embedded-opentype");
+  font-style: normal;
 }
 @font-face {
-    font-family: "Coiny";
-    src: url("../../fonts/Coiny/Coiny-Regular.woff2") format("woff2"),
-        url("../../fonts/Coiny/Coiny-Regular.woff") format("woff"),
-        url("../../fonts/Coiny/Coiny-Regular.ttf") format("truetype"),
-        url("../../fonts/Coiny/Coiny-Regular.eot") format("embedded-opentype");
-    font-style: normal;
+  font-family: "Coiny";
+  src: url("./fonts/Coiny/Coiny-Regular.woff2") format("woff2"), url("./fonts/Coiny/Coiny-Regular.woff") format("woff"), url("./fonts/Coiny/Coiny-Regular.ttf") format("truetype"), url("./fonts/Coiny/Coiny-Regular.eot") format("embedded-opentype");
+  font-style: normal;
 }
 @font-face {
-    font-family: "Monoton";
-    src: url("../../fonts/Monoton/Monoton-Regular.woff2") format("woff2"),
-        url("../../fonts/Monoton/Monoton-Regular.woff") format("woff"),
-        url("../../fonts/Monoton/Monoton-Regular.ttf") format("truetype"),
-        url("../../fonts/Monoton/Monoton-Regular.eot")
-            format("embedded-opentype");
-    font-style: normal;
+  font-family: "Monoton";
+  src: url("./fonts/Monoton/Monoton-Regular.woff2") format("woff2"), url("./fonts/Monoton/Monoton-Regular.woff") format("woff"), url("./fonts/Monoton/Monoton-Regular.ttf") format("truetype"), url("./fonts/Monoton/Monoton-Regular.eot") format("embedded-opentype");
+  font-style: normal;
 }
 @font-face {
-    font-family: "Caveat";
-    src: url("../../fonts/Caveat/Caveat-Regular.woff") format("woff"),
-        url("../../fonts/Caveat/Caveat-Regular.ttf") format("truetype"),
-        url("../../fonts/Caveat/Caveat-Regular.eot") format("embedded-opentype");
-    font-style: normal;
+  font-family: "Caveat";
+  src: url("./fonts/Caveat/Caveat-Regular.woff") format("woff"), url("./fonts/Caveat/Caveat-Regular.ttf") format("truetype"), url("./fonts/Caveat/Caveat-Regular.eot") format("embedded-opentype");
+  font-style: normal;
 }
 @font-face {
-    font-family: "ComicNeue";
-    src: url("../../fonts/ComicNeue/ComicNeue-Regular.woff2") format("woff2"),
-        url("../../fonts/ComicNeue/ComicNeue-Regular.ttf") format("truetype"),
-        url("../../fonts/ComicNeue/ComicNeue-Regular.eot")
-            format("embedded-opentype");
-    font-style: normal;
+  font-family: "ComicNeue";
+  src: url("./fonts/ComicNeue/ComicNeue-Regular.woff2") format("woff2"), url("./fonts/ComicNeue/ComicNeue-Regular.ttf") format("truetype"), url("./fonts/ComicNeue/ComicNeue-Regular.eot") format("embedded-opentype");
+  font-style: normal;
 }
 @font-face {
-    font-family: "KottaOne";
-    src: url("../../fonts/KottaOne/KottaOne-Regular.woff2") format("woff2"),
-        url("../../fonts/KottaOne/KottaOne-Regular.ttf") format("truetype"),
-        url("../../fonts/KottaOne/KottaOne-Regular.eot")
-            format("embedded-opentype");
-    font-style: normal;
+  font-family: "KottaOne";
+  src: url("./fonts/KottaOne/KottaOne-Regular.woff2") format("woff2"), url("./fonts/KottaOne/KottaOne-Regular.ttf") format("truetype"), url("./fonts/KottaOne/KottaOne-Regular.eot") format("embedded-opentype");
+  font-style: normal;
 }
 @font-face {
-    font-family: "Courgette";
-    src: url("../../fonts/Courgette/Courgette-Regular.woff2") format("woff2"),
-        url("../../fonts/Courgette/Courgette-Regular.woff") format("woff"),
-        url("../../fonts/Courgette/Courgette-Regular.ttf") format("truetype"),
-        url("../../fonts/Courgette/Courgette-Regular.eot")
-            format("embedded-opentype");
-    font-style: normal;
+  font-family: "Courgette";
+  src: url("./fonts/Courgette/Courgette-Regular.woff2") format("woff2"), url("./fonts/Courgette/Courgette-Regular.woff") format("woff"), url("./fonts/Courgette/Courgette-Regular.ttf") format("truetype"), url("./fonts/Courgette/Courgette-Regular.eot") format("embedded-opentype");
+  font-style: normal;
 }
 @font-face {
-    font-family: "HomemadeApple";
-    src: url("../../fonts/Homemade_Apple/HomemadeApple-Regular.woff2")
-            format("woff2"),
-        url("../../fonts/Homemade_Apple/HomemadeApple-Regular.woff")
-            format("woff"),
-        url("../../fonts/Homemade_Apple/HomemadeApple-Regular.ttf")
-            format("truetype"),
-        url("../../fonts/Homemade_Apple/HomemadeApple-Regular.eot")
-            format("embedded-opentype");
-    font-style: normal;
+  font-family: "HomemadeApple";
+  src: url("./fonts/Homemade_Apple/HomemadeApple-Regular.woff2") format("woff2"), url("./fonts/Homemade_Apple/HomemadeApple-Regular.woff") format("woff"), url("./fonts/Homemade_Apple/HomemadeApple-Regular.ttf") format("truetype"), url("./fonts/Homemade_Apple/HomemadeApple-Regular.eot") format("embedded-opentype");
+  font-style: normal;
 }
 @font-face {
-    font-family: "Arizonia";
-    src: url("../../fonts/Arizonia/Arizonia-Regular.woff2") format("woff2"),
-        url("../../fonts/Arizonia/Arizonia-Regular.woff") format("woff"),
-        url("../../fonts/Arizonia/Arizonia-Regular.ttf") format("truetype"),
-        url("../../fonts/Arizonia/Arizonia-Regular.eot")
-            format("embedded-opentype");
-    font-style: normal;
+  font-family: "Arizonia";
+  src: url("./fonts/Arizonia/Arizonia-Regular.woff2") format("woff2"), url("./fonts/Arizonia/Arizonia-Regular.woff") format("woff"), url("./fonts/Arizonia/Arizonia-Regular.ttf") format("truetype"), url("./fonts/Arizonia/Arizonia-Regular.eot") format("embedded-opentype");
+  font-style: normal;
 }
 @font-face {
-    font-family: "Fantacy";
-    src: url("../../fonts/Oooh_Baby/OoohBaby-Regular.woff2") format("woff2"),
-        url("../../fonts/Oooh_Baby/OoohBaby-Regular.woff") format("woff"),
-        url("../../fonts/Oooh_Baby/OoohBaby-Regular.ttf") format("truetype"),
-        url("../../fonts/Oooh_Baby/OoohBaby-Regular.eot")
-            format("embedded-opentype");
-    font-style: normal;
+  font-family: "Fantacy";
+  src: url("./fonts/Oooh_Baby/OoohBaby-Regular.woff2") format("woff2"), url("./fonts/Oooh_Baby/OoohBaby-Regular.woff") format("woff"), url("./fonts/Oooh_Baby/OoohBaby-Regular.ttf") format("truetype"), url("./fonts/Oooh_Baby/OoohBaby-Regular.eot") format("embedded-opentype");
+  font-style: normal;
 }
 @font-face {
-    font-family: "SherlockHolmes";
-    src: url("../../fonts/GreatVibes/GreatVibes-Regular.woff2") format("woff2"),
-        url("../../fonts/GreatVibes/GreatVibes-Regular.woff") format("woff"),
-        url("../../fonts/GreatVibes/GreatVibes-Regular.ttf") format("truetype"),
-        url("../../fonts/GreatVibes/GreatVibes-Regular.eot")
-            format("embedded-opentype");
-    font-style: normal;
+  font-family: "SherlockHolmes";
+  src: url("./fonts/GreatVibes/GreatVibes-Regular.woff2") format("woff2"), url("./fonts/GreatVibes/GreatVibes-Regular.woff") format("woff"), url("./fonts/GreatVibes/GreatVibes-Regular.ttf") format("truetype"), url("./fonts/GreatVibes/GreatVibes-Regular.eot") format("embedded-opentype");
+  font-style: normal;
 }
 .heading-primary {
-    font-size: 6.2rem;
-    font-weight: 700;
-    font-family: "Caveat";
-    line-height: 1;
-    margin-bottom: 3.2rem;
+  font-size: 6.2rem;
+  font-weight: 700;
+  font-family: "Caveat";
+  line-height: 1;
+  margin-bottom: 3.2rem;
 }
 
 .s1 {
-    background-color: black;
-    display: block;
+  background-color: black;
+  display: block;
 }
 
 .s2 {
-    background-color: white;
+  background-color: white;
 }
 
 .s3 {
-    background-color: wheat;
+  background-color: wheat;
 }
 
 .s4 {
-    background-color: white;
+  background-color: white;
 }
 
 .s5 {
-    background-color: wheat;
+  background-color: wheat;
 }
 
 .s6 {
-    background-color: tomato;
+  background-color: tomato;
 }
 
 .introduction {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    gap: 4rem;
-    padding: 5rem 10rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 4rem;
+  padding: 5rem 10rem;
 }
 .introduction__header {
-    color: wheat;
+  color: wheat;
 }
 .introduction__header span {
-    color: #ffe656;
-    text-shadow: 0 0.5rem 0.5rem #ffe656;
+  color: #ffe656;
+  text-shadow: 0 0.5rem 0.5rem #ffe656;
 }
 .introduction__paragraph {
-    color: #999;
-    font-size: 1.6rem;
-    letter-spacing: 1px;
-    margin-bottom: 4.8rem;
-    line-height: 1.5;
-    font-family: "OpenSans";
+  color: #999;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  margin-bottom: 4.8rem;
+  line-height: 1.5;
+  font-family: "OpenSans";
 }
 .introduction__buttonbox {
-    display: flex;
+  display: flex;
 }
 .introduction__image img {
-    width: 100%;
+  width: 100%;
 }
 .introduction__button-first {
-    background: #36715f;
+  background: #36715f;
 }
 .introduction__button-second {
-    background: transparent;
+  background: transparent;
 }
 .introduction__button-second:hover {
-    background: #36715f;
+  background: #36715f;
 }
 
 .btn {
-    font-size: 2rem;
-    border: none;
-    padding: 1rem 3rem;
-    font-family: "Coiny";
-    color: white;
-    border-radius: 10rem;
-    cursor: pointer;
-    transition: all 0.2s;
+  font-size: 2rem;
+  border: none;
+  padding: 1rem 3rem;
+  font-family: "Coiny";
+  color: white;
+  border-radius: 10rem;
+  cursor: pointer;
+  transition: all 0.2s;
 }
 .btn:hover {
-    transform: translateY(-0.3rem);
+  transform: translateY(-0.3rem);
 }
 .btn:not(:last-child) {
-    margin-right: 1rem;
+  margin-right: 1rem;
 }
 
 .header {
-    width: 100vw;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem 3rem;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 3rem;
 }
 .header__img {
-    width: 20rem;
+  width: 20rem;
 }
 .header__list {
-    display: flex;
+  display: flex;
 }
 .header__item {
-    list-style: none;
-    padding: 1rem 2rem;
-    cursor: pointer;
-    border-radius: 10rem;
-    transition: all 0.2s;
+  list-style: none;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  border-radius: 10rem;
+  transition: all 0.2s;
 }
 .header__item:not(:last-child) {
-    margin-right: 0.5rem;
+  margin-right: 0.5rem;
 }
 .header__item:hover {
-    background: #36715f;
+  background: #36715f;
 }
 .header__link {
-    text-decoration: none;
-    color: white;
-    font-size: 1.5rem;
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
 }
 
 .active {
-    background: #36715f;
+  background: #36715f;
 }
 
 /*# sourceMappingURL=style.css.map */
