@@ -11,7 +11,6 @@ html {
   box-sizing: border-box;
 }
 
-html,
 body {
   height: 100%;
   scroll-behavior: smooth;
@@ -127,12 +126,14 @@ body {
   gap: 4rem;
   padding: 5rem 10rem;
 }
+.introduction__textbox {
+  animation: textboxAnimation 2s;
+}
 .introduction__header {
   color: wheat;
 }
 .introduction__header span {
   color: #ffe656;
-  text-shadow: 0 0.5rem 0.5rem #ffe656;
 }
 .introduction__paragraph {
   color: #999;
@@ -147,6 +148,7 @@ body {
 }
 .introduction__image img {
   width: 100%;
+  animation: imageAnimation 2s;
 }
 .introduction__button-first {
   background: #36715f;
@@ -158,21 +160,75 @@ body {
   background: #36715f;
 }
 
+@keyframes imageAnimation {
+  0% {
+    opacity: 0.2;
+    transform: translateY(-4rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes textboxAnimation {
+  0% {
+    opacity: 0.2;
+    transform: translateY(4rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .btn {
-  font-size: 2rem;
   border: none;
-  padding: 1rem 3rem;
-  font-family: "Coiny";
-  color: white;
-  border-radius: 10rem;
   cursor: pointer;
   transition: all 0.2s;
+  font-size: 2rem;
+  color: white;
+  padding: 1rem 3rem;
+  font-family: "Coiny";
+  border-radius: 10rem;
 }
-.btn:hover {
+.btn:hover, .btn:active {
   transform: translateY(-0.3rem);
 }
 .btn:not(:last-child) {
   margin-right: 1rem;
+}
+.icon__sign-up {
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: white;
+  margin-right: 0.5rem;
+}
+
+.delivered__meals {
+  display: flex;
+  align-items: center;
+}
+.delivered__faces img {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  margin: 4.8rem 0;
+}
+.delivered__faces img:not(:last-child) {
+  margin-right: -3rem;
+}
+.delivered__paragraph {
+  color: #999;
+  font-size: 1.4rem;
+  margin-left: 2rem;
+  font-family: "OpenSans";
+  letter-spacing: 1px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+.delivered__paragraph span {
+  color: #36715f;
+  font-size: 2rem;
 }
 
 .header {
@@ -181,6 +237,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 2rem 3rem;
+  animation: headerAnimation 2s;
 }
 .header__img {
   width: 20rem;
@@ -205,10 +262,23 @@ body {
   text-decoration: none;
   color: white;
   font-size: 1.5rem;
+  display: flex;
+  align-items: center;
 }
 
 .active {
   background: #36715f;
+}
+
+@keyframes headerAnimation {
+  0% {
+    transform: scale(0.8);
+    opacity: 0.1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

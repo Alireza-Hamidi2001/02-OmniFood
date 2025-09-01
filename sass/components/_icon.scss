@@ -1,0 +1,10 @@
+@use '../abstracts/variables' as *;
+
+.icon {
+    &__sign-up {
+        width: 1.5rem;
+        height: 1.5rem;
+        fill: white;
+        margin-right: 0.5rem;
+    }
+}

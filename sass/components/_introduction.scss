@@ -9,14 +9,16 @@
     gap: 4rem;
     padding: 5rem 10rem;
 
-    &__textbox {}
+    &__textbox {
+        animation: textboxAnimation 2s;
+    }
 
     &__header {
         color: wheat;
 
         & span {
             color: $color-warning;
-            text-shadow: 0 0.5rem 0.5rem $color-warning;
+            // text-shadow: 0 0.5rem 0.5rem $color-warning;
         }
     }
 
@@ -36,6 +38,7 @@
     &__image {
         & img {
             width: 100%;
+            animation: imageAnimation 2s;
         }
     }
 
@@ -51,4 +54,28 @@
         }
     }
 
+}
+
+@keyframes imageAnimation {
+    0% {
+        opacity: 0.2;
+        transform: translateY(-4rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes textboxAnimation {
+    0% {
+        opacity: 0.2;
+        transform: translateY(+4rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
